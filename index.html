@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Maximiliano Herrera .NET Software Developer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            position: relative;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 20px;
+        }
+
+        .affix {
+            top: 0;
+            width: 100%;
+            z-index: 9999 !important;
+        }
+
+        .navbar {
+            margin-bottom: 0px;
+        }
+
+        .affix ~ .container-fluid {
+            position: relative;
+            top: 50px;
+        }
+
+        #about {
+            padding-top: 50px;
+            height: 500px;
+            /*color: #fff;*/
+            background-color: #EEE;
+        }
+
+        #experience {
+            padding-top: 50px;
+            /*color: #fff;*/
+            background-color: #EEE;
+        }
+
+        #contact {
+            padding-top: 50px;
+            height: 500px;
+            /*color: #fff;*/
+            background-color: #EEE;
+        }
+
+        .img-about {
+            border-radius: 50%;
+            max-width: 80%;
+            height: auto;
+            width: 150px;
+        }
+
+        .img-company {
+            float: left;
+            width: 70px;
+            text-align: center;
+            margin-top: 20px;
+            /*max-width: 80%;
+            height: auto;
+            width: 50px;*/
+        }
+
+
+        .button {
+            color: #0026ff;
+            border: solid 2px #722872;
+            border-radius: 50%;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-size: 20px;
+            line-height: 48px;
+            transition: all .3s ease-in-out;
+        }
+
+            .button:hover {
+                border: solid 2px #fff;
+                color: #722872;
+                background: #fff;
+            }
+
+        .contact {
+            color: #fff;
+            background-color: #aaa;
+            text-align: center;
+            box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-inverse" data-spy="affix">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Work experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="about" class="container-fluid">
+        <h1>About</h1>
+        <div class="row">
+            <div class="col-md-9">
+                <p>
+                    My name is Maximiliano Herrera, I'm an Argentine Software Developer with more than five years of experience in .NET technologies.
+                    In my profesional career I've worked in three companies on different business and I've had the opportunity to work with different technologies like Windows Form, ASP.NET, ASP.NET MVC, SQL Server, Informix and Oracle.<br />
+                    <br />My main goal is to work abroad, improve my experience and professional career as Software developer as well as to improve my English.
+                    I really enjoy learning and working on web technologies as well as on backend. I'm a passionate software developer moreover I like to be updated and follow good practices like object oriented design, design patterns, SOLID principles an so on.
+                </p>
+                <hr class="star-bright" /><h4 class="text-center">.NET Software Developer</h4>
+            </div>
+            <div class="col-md-3">
+                <img class="img-about img-responsive" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/000/262/0e7/266c8b2.jpg" alt="Profile picture" />
+            </div>
+        </div>
+    </div>
+    <div id="experience" class="container-fluid">
+        <h1>Work experience</h1>
+        <div class="row">
+            <div class="col-xs-4">
+                <h2>Senior .NET Developer</h2>
+                <h3>Hexacta</h3>
+                <h4>October 2014 – February 2016</h4>
+            </div>
+            <div class="col-xs-8">
+                <a href="http://www.hexacta.com/" target="_blank">
+                    <img class="img-company img-responsive" src="https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAQKAAAAJDY2NmQwZDE0LWFkOGQtNGQ1My04NGEyLTZlYjc2Y2QxODZjMA.png">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                <strong>Company:</strong> Hexacta is leader in IT consulting, offshore software development, testing and user interface design. With more than 15 years executing highly technical projects on-time, within scope and with lower cost than similar U.S. and European-based development centers.
+            </p>
+
+            <p>
+                <strong>Customer:</strong> Bolloré Africa Logistics is the biggest transport and logistics operator in Africa, where it has a network without equal with 250 subsidiaries and almost 24,000 employees in 55 countries, including 46 in Africa.
+            </p>
+            <p>
+                <strong>Product: </strong> Containers management system.
+                Web application that provides functionality for handling containers (income and outcome) in Africa’s terminals, as well as a complex billing module of services to customers. The application was initially implemented in Angola and Tanzania, and now is productive in more than 15 countries on the African continent.
+            </p>
+            <p>
+                <strong>Project: </strong> Bolloré Ipaki website (Intranet):
+                The intranet is a website developed with ASP.NET technology that provides the functionality for the containers’ terminals’ management and the billing services to customers.
+            </p>
+            <p>
+                <strong>Technologies: </strong> Microsoft .NET framework v4.0, C#, ASP .NET, iBatis.NET, SQL Server 2008 R2, Visual Studio 2012/2013, TFS, Microsoft Compact Framework 3.5, DevExpress(reporting tool) , WCF, HTML, Javascript, AutoMapper.Net4, LINQ
+            </p>
+            <p>
+                <strong>Project: </strong>  Bolloré IES (Public website):
+                The extranet is a website developed with MVC.NET technology that allows Bolloré’s customers to access information, perform a limited number of actions on their containers and print PDF documents like Invoice, payments and so on. It is integrated with the intranet through WCF services.
+                Technologies: MVC .Net 5.0, .Net Framework 4.5.1, Fluent Validations, ORM Entity Framework 6, SQL Server 2008 R2, Visual Studio 2012/2013, Dependency Injection (Unity), AutoMapper.Net4, LINQ, jQuery, javascript, bootstrap, HTML, CSS.
+            </p>
+            <p>
+                <strong>Duties:</strong>
+                <ul>
+                    <li>Development requirements with ASP .NET, MVC .NET and SQL technologies on Ipaki and IES projects.</li>
+                    <li>Develop reports with DevExpress and SQL technologies.                                           </li>
+                    <li>Analyze issues.                                                                                 </li>
+                    <li>Analyze and fix bugs.                                                                           </li>
+                    <li>Code review with TFS tool.                                                                      </li>
+                    <li>Manage work items with TFS.                                                                </li>
+                </ul>
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-xs-9">
+                <h2>Senior Programmer Analyst</h2>
+                <h3>Prosegur</h3>
+                <h4>August 2013 – September 2014</h4>
+            </div>
+            <div class="col-xs-3">
+                <a href="http://www.prosegur.com.ar/" target="_blank">
+                    <img class="img-company img-responsive" src="https://media.licdn.com/media/AAEAAQAAAAAAAALiAAAAJGVhMjkxODU4LWFhMmYtNDNiNC1iZTA5LTJiOGRkNjAwOTE1Zg.png">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                <strong>Company:</strong> Prosegur is a multinational company offering global and comprehensive security solutions. Also the company offers services covering different spheres of security: Manned Guarding, Cash in Transit, Technology and Alarms.
+            </p>
+            <p>
+                <strong>Product: </strong>Logistic management system for Cash in Transit sector.
+                The main purpose of the system was to plan the logistics to deliver cash to different companies and banks in Argentina.
+            </p>
+            <p>
+                <strong>Duties:</strong> My main duty was the integration between two systems. One of them used an Informix database, which was the legacy system. The other system called “SOL”, whose purpose was to replace the legacy system, was developed using Java and Oracle technologies. For the integration between the two systems, we’ve used windows service, web services and java queues.
+                Furthermore, an initial data load for this system was made through a windows form application using excel files (Office API objects).
+            </p>
+        </div>
+    </div>
+    <div id="contact" class="container-fluid contact">
+        <!--<footer>-->
+        <div id="footer-above">
+            <div>
+                <h1>Contact</h1>
+                <p>Made with <i class="fa fa-fw fa-coffee"></i> and <i class="fa fa-fw fa-music"></i><br />by <a href="http://qlip.in">Maximiliano Herrera</a>.</p>
+            </div>
+            <div>
+                <h3>Around the Web</h3>
+                <ul>
+                    <li><a target="_blank" href="https://ie.linkedin.com/in/maximiliano-herrera-bocchicchio-79bba615" class="button social"><i class="fa fa-fw fa-linkedin"></i></a></li>
+                    <li><a target="_blank" href="#" class="button social"><i class="fa fa-fw fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer-below">
+            qlip ©
+            <script>document.write(new Date().getFullYear())</script>. All Rights Reversed
+        </div>
+    </div>
+    <footer>
+        <hr>
+        <div class="container">
+            <p>
+                Written and coded by <a href="https://www.freecodecamp.com/herreramaxi" target="_blank">Maximiliano Herrera</a>.
+            </p>
+        </div>
+    </footer>
+    <!--<h1>Contact</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </footer>-->
+</body>
+</html>
