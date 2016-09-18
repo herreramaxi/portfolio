@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <style>
         body {
             position: relative;
@@ -25,6 +26,11 @@
             margin-bottom: 0px;
         }
 
+        body, html, .container-fluid, .sidebar, .body {
+            height: 100%;
+            min-height: 100%;
+        }
+
         .affix ~ .container-fluid {
             position: relative;
             top: 50px;
@@ -32,14 +38,21 @@
 
         #about {
             padding-top: 50px;
-            height: 500px;
+            /*height: 500px;*/
+            /*color: #fff;*/
+            background-color: #EEE;
+        }
+
+        #portfolio {
+            padding-top: 50px;
+            /*height: 500px;*/
             /*color: #fff;*/
             background-color: #EEE;
         }
 
         #contact {
             padding-top: 50px;
-            height: 500px;
+            /*height: 500px;*/
             /*color: #fff;*/
             background-color: #EEE;
         }
@@ -50,17 +63,6 @@
             height: auto;
             width: 150px;
         }
-
-        .img-company {
-            float: left;
-            width: 70px;
-            text-align: center;
-            margin-top: 20px;
-            /*max-width: 80%;
-            height: auto;
-            width: 50px;*/
-        }
-
 
         .button {
             color: #0026ff;
@@ -87,6 +89,149 @@
             text-align: center;
             box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
         }
+
+
+        #portfolio .portfolio-item {
+            margin: 0 0 15px;
+            right: 0;
+            border: 1px outset rgba(255, 255, 255, 0.6);
+        }
+
+            #portfolio .portfolio-item:hover {
+                transition: 0.5s;
+                box-shadow: 5px 10px 5px rgba(0,0,0,0.9);
+            }
+
+            #portfolio .portfolio-item .portfolio-link {
+                display: block;
+                position: relative;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+                #portfolio .portfolio-item .portfolio-link .portfolio-hover {
+                    background: rgba(0, 0, 0, .7);
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    transition: all ease .5s;
+                    -webkit-transition: all ease .5s;
+                    -moz-transition: all ease .5s,;
+                }
+
+                    #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+                        opacity: 1;
+                    }
+
+                    #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+                        position: absolute;
+                        width: 100%;
+                        height: 20px;
+                        font-size: 20px;
+                        text-align: center;
+                        top: 50%;
+                        margin-top: -12px;
+                        color: #fff;
+                    }
+
+                        #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+                            margin-top: -12px;
+                        }
+
+                        #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+                        #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+                            margin: 0;
+                        }
+
+            #portfolio .portfolio-item .portfolio-caption {
+                max-width: 400px;
+                margin: 0 auto;
+                background-color: rgba(0,0,0, 0.8);
+                text-align: center;
+                padding: 25px;
+            }
+
+                #portfolio .portfolio-item .portfolio-caption h4 {
+                    color: #fff;
+                    text-transform: none;
+                    margin: 0;
+                }
+
+                #portfolio .portfolio-item .portfolio-caption p {
+                    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-style: italic;
+                    font-size: 13px;
+                    margin: 0;
+                }
+
+        #portfolio * {
+            z-index: 2;
+        }
+
+        @media (min-width:767px) {
+            #portfolio .portfolio-item {
+                margin: 0 0 30px;
+            }
+        }
+
+        #about {
+            color: white;
+            background: url('https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/14224905_10154548675198179_4678708436312691831_n.jpg?oh=b2c5dbfa6e299daa0a2ae1ae520d77c9&oe=588333FD') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        #portfolio {
+            color: black;
+            /*background: url('https://c8.staticflickr.com/3/2944/15184528727_084715d318_b.jpg') no-repeat center center fixed;*/
+            /*background: url('https://c7.staticflickr.com/3/2897/14367113790_5b93037ec1_h.jpg' ) no-repeat center center fixed;*/
+            /*background: url('https://c3.staticflickr.com/8/7339/12661336634_f25c1980de_b.jpg' ) no-repeat center center fixed;*/
+             /*background: url('http://www.spottedbylocals.com/wp-content/uploads/Venice-Sunset-by-Pedro-Szekely.jpg' ) no-repeat center center fixed;*/
+           background: url('https://i.guim.co.uk/img/media/574fbf745b2112e040a04dd82d23d66f0be1c439/0_13_4368_2622/master/4368.jpg?w=1920&q=55&auto=format&usm=12&fit=max&s=f617b0887e75df933b8dfefcf80e3c59' ) no-repeat center center fixed;
+             
+            
+             background-size: cover;
+        }
+
+        #contact {
+            color: black;
+            background: url('https://c7.staticflickr.com/6/5607/15326996038_4657d53aea_b.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .fill {
+            min-height: 100%;
+            height: 100%;
+        }
+
+        .banner-social-buttons {
+        }
+        /* social buttons */
+        .btn {
+            display: inline-block;
+            color: #000;
+            border: 2px outset rgba(0, 0, 0, 0.9);
+            background: #C0C0C0;
+            text-shadow: 1px 1px 1px rgba(0,0,0, 20);
+            box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+            letter-spacing: 2px;
+            transition: 0.2s;
+        }
+
+            .btn:hover {
+                color: #fff;
+                border: 2px outset rgba(0, 0, 0, 0.9);
+                background: rgba(0,0,0, 0.9);
+                transform: scale(1.1);
+                transition: 0.2s;
+                text-shadow: 1px 1px 1px rgba(0,0,0, 20);
+                box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+                letter-spacing: 2px;
+            }
+
+            .text-about{
+                font-size:1.2em;
+            }
     </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -104,6 +249,7 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -111,11 +257,11 @@
         </div>
     </nav>
 
-    <div id="about" class="container-fluid">
+    <div id="about" class="container-fluid fill">
         <h1>About</h1>
         <div class="row">
             <div class="col-md-9">
-                <p>
+                <p class="text-about">
                     My name is Maximiliano Herrera, I'm an Argentine Software Developer with more than five years of experience in .NET technologies.
                     In my profesional career I've worked in three companies on different business and I've had the opportunity to work with different technologies like Windows Form, ASP.NET, ASP.NET MVC, SQL Server, Informix and Oracle.<br />
                     <br />My main goal is to work abroad, improve my experience and professional career as Software developer as well as to improve my English.
@@ -128,7 +274,41 @@
             </div>
         </div>
     </div>
-       <div id="contact" class="container-fluid contact">
+    <div id="portfolio" class="container-fluid fill">
+        <h1>Portfolio</h1>
+        <h2>Below you'll find some of my recent work.</h2>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="https://herreramaxi.github.io/getweather" target="_blank" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-github-square fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="https://66.media.tumblr.com/0b6295ff9c21830fa514932235d77da9/tumblr_odpsz16tcR1vgrnsho1_540.jpg" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Weather project</h4>
+                    <p id="small-text" class="text-muted">Bootstrap, CSS, HTML, javascript, jQuery and Yahoo Weather API</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="https://herreramaxi.github.io/randomquote" target="_blank" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-github-square fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="https://65.media.tumblr.com/abfa653a098d44151ecadd7dfccfcd2b/tumblr_odptwuLEkP1vgrnsho1_540.jpg" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Random quote project</h4>
+                    <p id="small-text" class="text-muted">Bootstrap, CSS, HTML, javascript, jQuery and Mashape Cloud API</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="container-fluid contact fill">
         <!--<footer>-->
         <div id="footer-above">
             <div>
@@ -137,10 +317,24 @@
             </div>
             <div>
                 <h3>Around the Web</h3>
-                <ul>
+                <ul class="list-inline banner-social-buttons">
+
+
+                    <li>
+                        <a href="https://ie.linkedin.com/in/maximiliano-herrera-bocchicchio-79bba615" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/herreramaxi" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="http://www.freecodecamp.com/herreramaxi" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i> <span class="network-name">freeCodeCamp</span></a>
+                    </li>
+
+                </ul>
+                <!--<ul>
                     <li><a target="_blank" href="https://ie.linkedin.com/in/maximiliano-herrera-bocchicchio-79bba615" class="button social"><i class="fa fa-fw fa-linkedin"></i></a></li>
                     <li><a target="_blank" href="#" class="button social"><i class="fa fa-fw fa-github"></i></a></li>
-                </ul>
+                </ul>-->
             </div>
         </div>
         <div id="footer-below">
@@ -148,14 +342,14 @@
             <script>document.write(new Date().getFullYear())</script>. All Rights Reversed
         </div>
     </div>
-    <footer>
+    <!--<footer>
         <hr>
         <div class="container">
             <p>
                 Written and coded by <a href="https://www.freecodecamp.com/herreramaxi" target="_blank">Maximiliano Herrera</a>.
             </p>
         </div>
-    </footer>
+    </footer>-->
     <!--<h1>Contact</h1>
         <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
         <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
