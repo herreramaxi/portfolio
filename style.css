@@ -193,12 +193,7 @@ a:hover,
 
 #contact {
     color: black;
-    /*background: url('https://c7.staticflickr.com/6/5607/15326996038_4657d53aea_b.jpg') no-repeat center center fixed;*/
-    /*background: url('http://shuzhong.biz/wp-content/uploads/2016/03/office_table_things_3494_2600_1463.jpg') no-repeat center center fixed;*/
-    /*background: url('http://www.omniofficefurniture.com/wp-content/uploads/2015/02/amazing-home-office-furniture-wallpaper-office-desktop-wallpaper-ideas-designs-wallpapers-for-walls-hd-background-free-download-borders-interior-design-malaysia.jpg') no-repeat center center fixed;*/
     background: url('http://www.roofoffices.com/images/home_5.jpg') no-repeat center center fixed;
-     
-    
     background-size: cover;
 }
 
@@ -248,8 +243,8 @@ a:hover,
 .button {
     /* color: #0026ff; */
     /*border: solid 3px #337ab7;*/
-     border: solid 3px rgba(0,0,0,0.8 );
-     color:rgba(0,0,0,0.8 );
+    border: solid 3px rgba(0,0,0,0.8 );
+    color: rgba(0,0,0,0.8 );
     border-radius: 50%;
     display: inline-block;
     width: 80px;
@@ -264,12 +259,12 @@ a:hover,
         /*border: solid 2px rgba(51,122,183,0.1 );
         color: rgba(255,255,255,1 );
         background: rgba(51,122,183,0.6 );*/
-          border: solid 2px rgba(0,0,0,0.1 );
+        border: solid 2px rgba(0,0,0,0.1 );
         color: rgba(255,255,255,1 );
         background: rgba(0,0,0,0.6 );
     }
 
-    .intro-divider {
+.intro-divider {
     width: 400px;
     border-top: 2px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
