@@ -58,10 +58,9 @@
         }
 
         .img-about {
-            border-radius: 50%;
-            max-width: 80%;
+            /*max-width: 80%;*/
             height: auto;
-            width: 150px;
+            width: 7em;
         }
 
         .button {
@@ -169,6 +168,33 @@
             z-index: 2;
         }
 
+        .text-footer {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.15em;
+            padding: 10px 0 10px 0;
+            margin-top: 20px;
+            color: #FFFFFF;
+            background-color: rgba(34,39,43,0.85);
+        }
+
+        .footer-logos i {
+            border: 1px solid #646464;
+            border: 1px solid rgba(100, 100, 100, .3);
+            border-radius: 25%;
+            color: #646464;
+            font-size: 1.1em;
+            margin-right: .25em;
+            padding: .4em;
+        }
+
+        a:hover,
+        .active {
+            color: white;
+            ;
+        }
+
+
         @media (min-width:767px) {
             #portfolio .portfolio-item {
                 margin: 0 0 30px;
@@ -230,6 +256,22 @@
         .text-about {
             font-size: 1.2em;
         }
+
+        /*a:hover,
+        .active {
+            opacity: 1 !important;
+        }*/
+
+        @media only screen and (max-width: 500px) {
+            .text-about {
+                font-size: 0.8em;
+            }
+
+            body, html, .container-fluid, .sidebar, .body {
+                /*height: 100%;*/
+                min-height: 100%;
+            }
+        }
     </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -258,17 +300,23 @@
     <div id="about" class="container-fluid fill">
         <h1>About</h1>
         <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-10 col-sm-10">
                 <p class="text-about">
-                    My name is Maximiliano Herrera, I'm an Argentine Software Developer with more than five years of experience in .NET technologies.
+                    <!--My name is Maximiliano Herrera, I'm an Argentine Software Developer with more than five years of experience in .NET technologies.
                     In my profesional career I've worked in three companies on different business and I've had the opportunity to work with different technologies like Windows Form, ASP.NET, ASP.NET MVC, SQL Server, Informix and Oracle.<br />
                     <br />My main goal is to work abroad, improve my experience and professional career as Software developer as well as to improve my English.
-                    I really enjoy learning and working on web technologies as well as on backend. I'm a passionate software developer moreover I like to be updated and follow good practices like object oriented design, design patterns, SOLID principles an so on.
+                    I really enjoy learning and working on web technologies as well as on backend. I'm a passionate software developer moreover I like to be updated and follow good practices like object oriented design, design patterns, SOLID principles an so on.-->
+                    I'm a passionate Software Developer with more than five years of experience on .NET technologies.
+                    In my professional career I have had the opportunity to work in three companies with different business and I could work with different technologies like Windows Form, ASP.NET, ASP.NET MVC, SQL Server, Informix, Oracle, HTML, Bootstrap, javascript and jQuery.
+                    <br /><br />
+                    My main goal and dream is to work abroad, improve my experience and professional career as Software developer as well as to improve my English.
+                    I really enjoy learning and working on web technologies as well as on backend. I'm interested in software development, furthermore I'm constantly trying to keep up-to-date and follow good practices like object oriented design, design patterns, SOLID principles and a lot more besides.
+                    Thanks for reading my profile, in case of any doubts or further information about me, please don't hesitate to contact me.
                 </p>
                 <hr class="star-bright" /><h4 class="text-center">.NET Software Developer</h4>
             </div>
-            <div class="col-md-3">
-                <img class="img-about img-responsive" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/000/262/0e7/266c8b2.jpg" alt="Profile picture" />
+            <div class="col-md-2 col-sm-2">
+                <img class="img-circle img-about collapse navbar-collapse" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/000/262/0e7/266c8b2.jpg" alt="Profile picture" />
             </div>
         </div>
     </div>
@@ -311,13 +359,11 @@
         <div id="footer-above">
             <div>
                 <h1>Contact</h1>
-                <p>Made with <i class="fa fa-fw fa-coffee"></i> and <i class="fa fa-fw fa-music"></i><br />by <a href="http://qlip.in">Maximiliano Herrera</a>.</p>
+
             </div>
             <div>
                 <h3>Around the Web</h3>
                 <ul class="list-inline banner-social-buttons">
-
-
                     <li>
                         <a href="https://ie.linkedin.com/in/maximiliano-herrera-bocchicchio-79bba615" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
                     </li>
@@ -327,19 +373,26 @@
                     <li>
                         <a href="http://www.freecodecamp.com/herreramaxi" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i> <span class="network-name">freeCodeCamp</span></a>
                     </li>
-
+                    <li>
+                        <a href="mailto:herreramaxi@mail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">E-mail</span></a>
+                    </li>
                 </ul>
-                <!--<ul>
-                    <li><a target="_blank" href="https://ie.linkedin.com/in/maximiliano-herrera-bocchicchio-79bba615" class="button social"><i class="fa fa-fw fa-linkedin"></i></a></li>
-                    <li><a target="_blank" href="#" class="button social"><i class="fa fa-fw fa-github"></i></a></li>
-                </ul>-->
+
             </div>
         </div>
-        <div id="footer-below">
-            qlip ©
-            <script>document.write(new Date().getFullYear())</script>. All Rights Reversed
-        </div>
     </div>
+    <!--<div class="footer navbar-fixed-bottom text-footer">
+        <div>
+            Designed and developed by <a class="aFooter" href="https://www.freecodecamp.com/herreramaxi" target="_blank">Maximiliano Herrera</a>
+        </div>
+        <div class="footer-logos row">
+            <a href="https://www.linkedin.com/in/maximiliano-herrera-bocchicchio-79bba615" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.freecodecamp.com/herreramaxi" target="_blank" rel="noopener noreferrer"><i class="fa fa-fire"></i></a>
+            <a href="https://codepen.io/herreramaxi/pens/public/" target="_blank" rel="noopener noreferrer"><i class="fa fa-codepen"></i></a>
+            <!--noopener: Requires that any browsing context created by following the hyperlink must not have an opener browsing context-->
+            <!--noreferrer: Requires that the browser should not send an HTTP referer header if the user follows the hyperlink-->
+        </div>
+    </div>-->
     <!--<footer>
         <hr>
         <div class="container">
