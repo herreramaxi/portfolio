@@ -32,20 +32,16 @@ body, html, .container-fluid, .sidebar, .body {
 
 .affix ~ .container-fluid {
     position: relative;
-    top: 50px;
+    /*top: 50px;*/
 }
 
 #about {
     padding-top: 50px;
-    /*height: 500px;*/
-    /*color: #fff;*/
     background-color: #EEE;
 }
 
 #portfolio {
     padding-top: 50px;
-    /*height: 500px;*/
-    /*color: #fff;*/
     background-color: #EEE;
 }
 
@@ -57,7 +53,8 @@ body, html, .container-fluid, .sidebar, .body {
 }
 
 .img-about {
-     width: 7em;
+     max-width: 7em;
+     padding-top:10px;
 }
 
 .button {
@@ -199,11 +196,10 @@ a:hover,
 
 #about {
     color: black;
-    background: url('https://www.grantthornton.com/~/media/Images/HC-Home-Carousel/Office/HC_2013_05_Laptop-Binder-Coffee-Cup.ashx') no-repeat center center fixed;
-    /*background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;*/
-    background-size: cover;
+    /*background: url('https://www.grantthornton.com/~/media/Images/HC-Home-Carousel/Office/HC_2013_05_Laptop-Binder-Coffee-Cup.ashx') no-repeat center center fixed;*/
+    background: url('http://www.writehacks.com/wp-content/uploads/2015/04/white-laptop-and-coffee-background.png') no-repeat center center fixed;
+    /*background: url('https://4.bp.blogspot.com/-bNyR_uS82mY/VDPWGnIP62I/AAAAAAABQSU/SGpvafEDxuk/s0/Laptop%2Bcoffee%2Bcup%2Bagenda.jpg');*/
+       background-size: cover;
 }
 
 #portfolio {
