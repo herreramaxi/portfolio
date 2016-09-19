@@ -53,28 +53,11 @@ body, html, .container-fluid, .sidebar, .body {
 }
 
 .img-about {
-     max-width: 7em;
-     padding-top:10px;
+    max-width: 7em;
+    padding-top: 10px;
 }
 
-.button {
-    color: #0026ff;
-    border: solid 2px #722872;
-    border-radius: 50%;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    font-size: 20px;
-    line-height: 48px;
-    transition: all .3s ease-in-out;
-}
 
-    .button:hover {
-        border: solid 2px #fff;
-        color: #722872;
-        background: #fff;
-    }
 
 .contact {
     color: #fff;
@@ -199,7 +182,7 @@ a:hover,
     /*background: url('https://www.grantthornton.com/~/media/Images/HC-Home-Carousel/Office/HC_2013_05_Laptop-Binder-Coffee-Cup.ashx') no-repeat center center fixed;*/
     background: url('http://www.writehacks.com/wp-content/uploads/2015/04/white-laptop-and-coffee-background.png') no-repeat center center fixed;
     /*background: url('https://4.bp.blogspot.com/-bNyR_uS82mY/VDPWGnIP62I/AAAAAAABQSU/SGpvafEDxuk/s0/Laptop%2Bcoffee%2Bcup%2Bagenda.jpg');*/
-       background-size: cover;
+    background-size: cover;
 }
 
 #portfolio {
@@ -210,7 +193,12 @@ a:hover,
 
 #contact {
     color: black;
-    background: url('https://c7.staticflickr.com/6/5607/15326996038_4657d53aea_b.jpg') no-repeat center center fixed;
+    /*background: url('https://c7.staticflickr.com/6/5607/15326996038_4657d53aea_b.jpg') no-repeat center center fixed;*/
+    /*background: url('http://shuzhong.biz/wp-content/uploads/2016/03/office_table_things_3494_2600_1463.jpg') no-repeat center center fixed;*/
+    /*background: url('http://www.omniofficefurniture.com/wp-content/uploads/2015/02/amazing-home-office-furniture-wallpaper-office-desktop-wallpaper-ideas-designs-wallpapers-for-walls-hd-background-free-download-borders-interior-design-malaysia.jpg') no-repeat center center fixed;*/
+    background: url('http://www.roofoffices.com/images/home_5.jpg') no-repeat center center fixed;
+     
+    
     background-size: cover;
 }
 
@@ -223,31 +211,6 @@ a:hover,
     min-height: 100%;
     height: 100%;
 }
-
-.banner-social-buttons {
-}
-/* social buttons */
-.btn {
-    display: inline-block;
-    color: #000;
-    border: 2px outset rgba(0, 0, 0, 0.9);
-    background: #C0C0C0;
-    text-shadow: 1px 1px 1px rgba(0,0,0, 20);
-    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
-    letter-spacing: 2px;
-    transition: 0.2s;
-}
-
-    .btn:hover {
-        color: #fff;
-        border: 2px outset rgba(0, 0, 0, 0.9);
-        background: rgba(0,0,0, 0.9);
-        transform: scale(1.1);
-        transition: 0.2s;
-        text-shadow: 1px 1px 1px rgba(0,0,0, 20);
-        box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
-        letter-spacing: 2px;
-    }
 
 .text-about {
     font-size: 1.2em;
@@ -278,4 +241,36 @@ a:hover,
     h2 {
         font-size: 1.0em;
     }
+}
+
+
+
+.button {
+    /* color: #0026ff; */
+    /*border: solid 3px #337ab7;*/
+     border: solid 3px rgba(0,0,0,0.8 );
+     color:rgba(0,0,0,0.8 );
+    border-radius: 50%;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 45px;
+    line-height: 70px;
+    transition: all .3s ease-in-out;
+}
+
+    .button:hover {
+        /*border: solid 2px rgba(51,122,183,0.1 );
+        color: rgba(255,255,255,1 );
+        background: rgba(51,122,183,0.6 );*/
+          border: solid 2px rgba(0,0,0,0.1 );
+        color: rgba(255,255,255,1 );
+        background: rgba(0,0,0,0.6 );
+    }
+
+    .intro-divider {
+    width: 400px;
+    border-top: 2px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
 }
