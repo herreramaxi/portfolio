@@ -197,10 +197,6 @@ a:hover,
 
 #portfolio {
     color: black;
-    /*background: url('https://c8.staticflickr.com/3/2944/15184528727_084715d318_b.jpg') no-repeat center center fixed;*/
-    /*background: url('https://c7.staticflickr.com/3/2897/14367113790_5b93037ec1_h.jpg' ) no-repeat center center fixed;*/
-    /*background: url('https://c3.staticflickr.com/8/7339/12661336634_f25c1980de_b.jpg' ) no-repeat center center fixed;*/
-    /*background: url('http://www.spottedbylocals.com/wp-content/uploads/Venice-Sunset-by-Pedro-Szekely.jpg' ) no-repeat center center fixed;*/
     background: url('https://i.guim.co.uk/img/media/574fbf745b2112e040a04dd82d23d66f0be1c439/0_13_4368_2622/master/4368.jpg?w=1920&q=55&auto=format&usm=12&fit=max&s=f617b0887e75df933b8dfefcf80e3c59' ) no-repeat center center fixed;
     background-size: cover;
 }
