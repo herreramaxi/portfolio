@@ -10,9 +10,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <script>
+        $(document).on('click', '.navbar-collapse.in', function (e) {
+            if ($(e.target).is('a')) {
+                $(this).collapse('hide');
+            }
+        });
+
+    </script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-
     <nav class="navbar navbar-inverse" data-spy="affix">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -33,8 +40,6 @@
             </div>
         </div>
     </nav>
-
-
     <div id="about" class="container">
         <h1>About</h1>
         <div class="row">
@@ -122,6 +127,5 @@
             </ul>
         </div>
     </div>
-
 </body>
 </html>
