@@ -1,7 +1,17 @@
+p,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto",sans-serif;
+    /*font-weight: 700;*/
+}
 
 body {
     position: relative;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 20px;
 }
 
@@ -47,9 +57,7 @@ body, html, .container-fluid, .sidebar, .body {
 }
 
 .img-about {
-    /*max-width: 80%;*/
-    height: auto;
-    width: 7em;
+     width: 7em;
 }
 
 .button {
@@ -190,8 +198,8 @@ a:hover,
 }
 
 #about {
-    color: white;
-    background: url('https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/14224905_10154548675198179_4678708436312691831_n.jpg?oh=b2c5dbfa6e299daa0a2ae1ae520d77c9&oe=588333FD') no-repeat center center fixed;
+    color: black;
+    background: url('https://www.grantthornton.com/~/media/Images/HC-Home-Carousel/Office/HC_2013_05_Laptop-Binder-Coffee-Cup.ashx') no-repeat center center fixed;
     /*background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;*/
@@ -271,7 +279,7 @@ a:hover,
         font-size: 1.2em;
     }
 
-    h3 {
+    h2 {
         font-size: 1.0em;
     }
 }
