@@ -171,9 +171,9 @@ a:hover,
     color: white;
 }
 
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
-    background-color:rgba(0,0,0,0.5);
-    border-radius:25%;
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 25%;
 }
 
 @media (min-width:767px) {
@@ -184,21 +184,19 @@ a:hover,
 
 #about {
     color: black;
-    /*background: url('https://www.grantthornton.com/~/media/Images/HC-Home-Carousel/Office/HC_2013_05_Laptop-Binder-Coffee-Cup.ashx') no-repeat center center fixed;*/
-    background: url('http://www.writehacks.com/wp-content/uploads/2015/04/white-laptop-and-coffee-background.png') no-repeat center center fixed;
-    /*background: url('https://4.bp.blogspot.com/-bNyR_uS82mY/VDPWGnIP62I/AAAAAAABQSU/SGpvafEDxuk/s0/Laptop%2Bcoffee%2Bcup%2Bagenda.jpg');*/
+    background: url('https://65.media.tumblr.com/2f5ade568c578fddfff3bec42ef3a56e/tumblr_ods2qgFut61vgrnsho1_1280.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
 #portfolio {
     color: black;
-    background: url('https://i.guim.co.uk/img/media/574fbf745b2112e040a04dd82d23d66f0be1c439/0_13_4368_2622/master/4368.jpg?w=1920&q=55&auto=format&usm=12&fit=max&s=f617b0887e75df933b8dfefcf80e3c59' ) no-repeat center center fixed;
+    background: url('https://66.media.tumblr.com/d0f062cfdd116ef27158c81b48ebca21/tumblr_ods2qgFut61vgrnsho3_1280.jpg' ) no-repeat center center fixed;
     background-size: cover;
 }
 
 #contact {
     color: black;
-    background: url('http://www.roofoffices.com/images/home_5.jpg') no-repeat center center fixed;
+    background: url('https://65.media.tumblr.com/eaebfccb4dbe4f07e6263b6681c93f3f/tumblr_ods2qgFut61vgrnsho2_1280.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
