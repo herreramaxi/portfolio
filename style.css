@@ -22,6 +22,8 @@ body {
 }
 
 .navbar {
+    background-color: rgba(0,0,0,0.8);
+    border-color: rgba(0,0,0,0.8);
     margin-bottom: 0px;
 }
 
@@ -167,9 +169,12 @@ body, html, .container-fluid, .sidebar, .body {
 a:hover,
 .active {
     color: white;
-    ;
 }
 
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    background-color:rgba(0,0,0,0.5);
+    border-radius:25%;
+}
 
 @media (min-width:767px) {
     #portfolio .portfolio-item {
