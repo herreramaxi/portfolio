@@ -211,34 +211,11 @@ a:hover,
     font-size: 1.2em;
 }
 
-@media only screen and (max-width: 500px) {
-    .text-about {
-        font-size: 0.8em;
-    }
-
-    body, html, .container-fluid, .sidebar, .body {
-        height: initial;
-        min-height: 100%;
-    }
-
-    .portfolioFill {
-        height: auto;
-    }
-
-    #contact {
-        height: 500px;
-    }
-
-    h1 {
-        font-size: 1.2em;
-    }
-
-    h2 {
-        font-size: 1.0em;
-    }
+.text-contact {
+    font-size: 3em;
+    font-weight: bold;
+    color: rgba(0,0,0,0.8);
 }
-
-
 
 .button {
     /* color: #0026ff; */
@@ -264,8 +241,34 @@ a:hover,
         background: rgba(0,0,0,0.6 );
     }
 
-.intro-divider {
-    width: 400px;
-    border-top: 2px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+@media only screen and (max-width: 500px) {
+    .text-about {
+        font-size: 0.8em;
+    }
+
+    body, html, .container-fluid, .sidebar, .body {
+        height: initial;
+        min-height: 100%;
+    }
+
+    .portfolioFill {
+        height: auto;
+    }
+
+    #contact {
+        height: 500px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1.0em;
+    }
+
+
+    .text-contact {
+        font-size: 2em;
+    }
 }
